@@ -1,0 +1,6 @@
+# Stage9 visualization dependencies (Python side). MATLAB solver unchanged.
+# Install: pip install -r viz/requirements.txt
+plotly>=5.18
+numpy>=1.23
+streamlit>=1.30
+pandas>=1.5

@@ -1,0 +1,26 @@
+# ===== 运行时产物 / 日志 =====
+logs/
+results/
+archive/
+figs/
+figures/
+
+# ===== 缓存 / 编译产物 =====
+__pycache__/
+*.pyc
+
+# ===== 临时 / 脚本辅助文件 =====
+_tmp_*
+*.tmp
+_tmp_parse_out.txt
+
+# ===== 工具/环境元数据 =====
+.codebuddy/
+
+# ===== MATLAB 产物 =====
+*.mat
+~$*
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db

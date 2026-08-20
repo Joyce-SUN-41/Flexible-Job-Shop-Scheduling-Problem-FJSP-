@@ -1,0 +1,2 @@
+@echo off
+"E:\Matlab R2024b\bin\matlab.exe" -batch "addpath('benchmarks'); addpath('tests'); prob=define_problem('static','MK01'); cfg=llmaoo_config(); cfg.AOO_MAXGEN=30; cfg.AOO_POP=20; llm=default_llm_state(); [elite,res]=aoo_engine(prob,cfg,llm,@(t,b,m)llm_hook(prob,cfg,t,b,m,llm)); s.mk=res.makespan; s.lb=res.loadUnb; s.iters=res.iters; s.nan=res.nan_count; save('logs/audit_smoke.mat','s'); exit" > logs/audit_smoke.log 2>&1
